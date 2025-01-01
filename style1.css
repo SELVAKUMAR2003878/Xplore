@@ -80,14 +80,14 @@ body{
 }
 
 #image{
-    padding: 40px;
-    width: auto;
+    padding: 20px;
+    width: 90%;
     text-align: center;
 }
 #image div{
     background-color: white;
     border-radius: 10px;
-    padding: 50px;
+    padding: 20px;
     width: 60%;
     border:solid 2px rgb(249, 15, 148);
     margin: auto;
@@ -155,6 +155,9 @@ body{
     #image div img {
         width: 100%;
         height:100%;
+    }
+    #image div h2 {
+        font-size: 1em;
     }
     #image p{
         width:100%;
