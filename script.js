@@ -9,14 +9,13 @@ button.onclick = async function getTourismPlaceImages() {
     const inputData = document.getElementById("inputdata");
     document.getElementById("image").innerHTML = "";
     if (inputData.value == "" || inputData.value == null) {
-        alert("Please enter a country name");
+        window.alert("Please enter a city name");
     }
     else {
         const url = `https://api.unsplash.com/search/photos?query=${inputData.value}%20tourism&client_id=${accessKey}`;
         try {
             const response = await fetch(url);
             const data = await response.json();
-
             if (data.results.length > 0) {
                 
                 data.results.forEach(photo => {
